@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ======= BOX ICONS dari www.boxicons.com ============== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ============== CSS ====================== -->
+    <link rel="stylesheet" href="asset/css/styles.css" />
+    <title>Pondok Labu Kicks</title>
+
+    <!-- ============== CSS SLICK ====================== -->
+    <link rel="stylesheet" type="text/css" href="asset/css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="asset/css/slick-theme.css" />
+  </head>
+  <body>
+    <!-- ============== SCROLL TOP ============== -->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up-circle scrolltop__icon"></i>
+    </a>
+
+    <!-- ============== HEADER ================== -->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+          <!-- logo box menu (ubah warna saja nanti dari boxicons.com) -->
+        </div>
+
+        <a href="index.html" class="nav__logo">PL Kicks™</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#products" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="#size" class="nav__link">Size Chart</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact Us</a>
+            </li>
+
+            <li>
+              <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Keranjang Belanja -->
+        <div class="nav__shop">
+          <a href="#" class="nav__icon">
+            <!-- coba ubah dari boxicons.com -->
+            <i class="bx bxs-shopping-bag-alt"></i>
+            <span>1</span>
+          </a>
+
+          <div class="nav__shop-content">
+            <div class="title_shop">
+              <span>Keranjang Belanja</span>
+            </div>
+
+            <div class="item">
+              <div class="image_cart">
+                <div class="image_c">
+                  <img src="" alt="" />
+                  <!-- Kasih gambar di src nya-->
+                </div>
+              </div>
+              <div class="description">
+                <span>Adidas Ultraboost 1.0 Kansas Jayhawks</span>
+                <span>1 Pcs</span>
+              </div>
+              <div class="total-price">Rp. 3.300.000</div>
+              <a href="#" class="delete-item">
+                <i class="bx bxs-x-circle"></i>
+              </a>
+            </div>
+
+            <div class="total-all">
+              <span>Total Harga</span>
+              <span>Rp. 3.300.000</span>
+            </div>
+
+            <div class="btn-checkout">
+              <a href="shopping-cart.html" class="button-top2">Check Out</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!-- ================= HOME ============== -->
+      <section class="home" id="home">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <div class="home__container bd-container bd-grid">
+              <div class="home__data">
+                <h1 class="home__title">SEPATU RUNNING</h1>
+                <h2 class="home__subtitle">
+                  Menyediakan sepatu running untuk setiap jenis dan gaya lari
+                  Anda.
+                </h2>
+                <a href="#" class="button">Explore Now</a>
+              </div>
+              <img src="asset/image/shoes_bg1.png" alt="" class="home__img" />
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="home__container bd-container bd-grid">
+              <div class="home__data">
+                <h1 class="home__title">SANDAL & SLIDE</h1>
+                <h2 class="home__subtitle">
+                  Jelajahi kesegaran dan kenyamanan dalam setiap langkah dengan
+                  koleksi sandal & slides kami.
+                </h2>
+                <a href="#" class="button">Explore Now</a>
+              </div>
+              <img src="asset/image/sandals.png" alt="" class="home__img" />
+            </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="home__container bd-container bd-grid">
+              <div class="home__data">
+                <h1 class="home__title">SEPATU KETS</h1>
+                <h2 class="home__subtitle">
+                  Tingkatkan gaya streetwear Anda dengan sepatu kets yang modern
+                  dan nyaman.
+                </h2>
+                <a href="#" class="button">Explore Now</a>
+              </div>
+              <img src="asset/image/shoess.png" alt="" class="home__img" />
+            </div>
+          </div>
+        </div>
+        <br />
+      </section>
+      <!-- Next and Previous Buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- Dots/Circles -->
+      <div style="text-align: center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+        <span class="dot"></span>
+      </div>
+
+      <!-- ================= ABOUT ============== -->
+      <section class="about section bd-container" id="about">
+        <div class="about__container bd-grid">
+          <div class="about__data">
+            <span class="section-subtitle about__initial">About Us</span>
+            <h2 class="section-title about__initial">
+              Trusted Market <br />
+              and Authentic Original
+            </h2>
+            <!-- Coba ubah tulisan di h2 nya untuk ubah menjadi gede/kecil -->
+            <p class="about__description">
+              Keaslian produk adalah jaminan kami. Belanja di toko kami berarti
+              mendapatkan sepatu asli dan berkualitas. Jika terbukti palsu/tidak
+              ori makan uang anda akan dikembalikan 100%.
+            </p>
+            <a href="#" class="button">More Information</a>
+          </div>
+
+          <img src="asset/image/about_us.jpg" alt="" class="about__img" />
+        </div>
+      </section>
+
+      <!-- ================= SERVICE ============== -->
+
+      <!-- ================= PRODUCT ============== -->
+      <section class="product section bd-container" id="products">
+        <span class="section-subtitle">Products</span>
+        <h2 class="section-title">New Arrival Products</h2>
+
+        <div class="products__container bd-grid logo-slider slick_two">
+          <div class="products__content">
+            <img src="asset/image/adidas.png" alt="" class="products__img" />
+            <!-- Isi gambar nanti -->
+            <h3 class="products__name">Adidas UB 1.0 <br />Kansas J</h3>
+            <!-- nama sepatu -->
+            <span class="products__detail">Running</span><br />
+            <!-- tipe sepatu -->
+            <span class="products__price">Rp 3.300.000</span>
+            <a href="product.html" class="button products__button_detail"
+              >Detail Product</a
+            >
+            <!-- deskripsi produk -->
+            <a href="#" class="button products__button"
+              ><i class="bx bxs-shopping-bag-alt"></i
+            ></a>
+          </div>
+
+          <div class="products__content">
+            <img src="asset/image/nb22.png" alt="" class="products__img" />
+            <!-- Isi gambar nanti -->
+            <h3 class="products__name">New Balance<br />Foam MRSHN</h3>
+            <span class="products__detail">Slides</span><br />
+            <span class="products__price">Rp 350.000</span>
+            <a href="#" class="button products__button_detail"
+              >Detail Product</a
+            >
+            <a href="#" class="button products__button"
+              ><i class="bx bxs-shopping-bag-alt"></i
+            ></a>
+          </div>
+
+          <div class="products__content">
+            <img src="asset/image/converse.png" alt="" class="products__img" />
+            <!-- Isi gambar nanti -->
+            <h3 class="products__name">Converse Chuck <br />Taylor All Star</h3>
+            <span class="products__detail">Kets</span><br />
+            <span class="products__price">Rp 759.000</span>
+            <a href="#" class="button products__button_detail"
+              >Detail Product</a
+            >
+            <a href="#" class="button products__button"
+              ><i class="bx bxs-shopping-bag-alt"></i
+            ></a>
+          </div>
+
+          <div class="products__content">
+            <img src="asset/image/nike.png" alt="" class="products__img" />
+            <!-- Isi gambar nanti -->
+            <h3 class="products__name">Nike Air Zoom<br />Pegasus 39</h3>
+            <span class="products__detail">Running</span><br />
+            <span class="products__price">Rp 1.600.000</span>
+            <a href="#" class="button products__button_detail"
+              >Detail Product</a
+            >
+            <a href="#" class="button products__button"
+              ><i class="bx bxs-shopping-bag-alt"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SIZE CHART ============== -->
+      <section class="size section bd-container" id="size">
+        <div class="size__container bd-grid">
+          <div class="size__data">
+            <span class="section-subtitle size__initial">Size Chart</span>
+            <h2 class="section-title size__initial">Find Your Correct Size</h2>
+            <p class="size__description">
+              <!-- Coba ubah deskripsi size chart -->
+              Temukan ukuran sepatu yang pas dengan panduan size chart kami. Ini
+              akan membantu anda mengetahui ukuran yang sesuai.
+            </p>
+          </div>
+          <!-- Tambahkan gambar size chart di src="" -->
+          <img src="" alt="" class="size__img" />
+        </div>
+      </section>
+
+      <!-- ================= CONTACT US ============== -->
+      <section class="contact section bd-container" id="contact">
+        <div class="contact__container bd-grid">
+          <div class="contact__data">
+            <span class="section-subtitle contact__initial">Contact Us</span>
+            <h2 class="section-title contact__initial">Talk To Us</h2>
+            <p class="contact__description">
+              Kami berkomitmen untuk memberikan layanan pelanggan yang unggul.
+              Jika Anda memiliki pertanyaan atau masalah, jangan ragu untuk
+              menghubungi kami.
+            </p>
+          </div>
+          <div class="contact__button">
+            <a href="#" class="button">Contact Us Now</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ============== -->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">PL Kicks™</a>
+          <span class="footer__description">Store</span>
+
+          <div>
+            <!-- Coba ubah warna logo di boxicons -->
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <!-- Coba ubah warna logo di boxicons -->
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <!-- Coba ubah warna logo di boxicons -->
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Service</h3>
+          <ul>
+            <li>
+              <a href="#" class="footer__link">Order Tracking</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Return and Warranty Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Customer Reviews and Ratings</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Contact Us</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+            <li><a href="#" class="footer__link">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+          <ul>
+            <li>Jl. RS. Fatmawati Raya No. 99</li>
+            <li>Pd. Labu, Jakarta Selatan 170845 - Indonesia</li>
+            <li>Phone : 089992386888</li>
+            <li>Email : plkicks@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy">
+        &#169; 2023 Nabil Ihsan Syakir. All right reserved
+      </p>
+    </footer>
+
+    <!-- ================= SCROLL REVEAL dari www.scrollrevealjs.org ============== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ================= MAIN JS ==================== -->
+    <script src="asset/js/main.js"></script>
+
+    <!-- ================= JS SLICK ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="asset/js/slick.js"></script>
+    <script src="asset/js/slick.min.js"></script>
+
+    <script>
+      $(".slick_two").slick({
+        dots: true,
+        arrows: true,
+        autoplay: true,
+        Infinite: true,
+        speed: 1500,
+        autoplaySpeed: 1900,
+        responsive: [
+          {
+            breakpoint: 5000,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ======= BOX ICONS dari www.boxicons.com ============== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ============== CSS ====================== -->
+    <link rel="stylesheet" href="asset/css/styles.css" />
+
+    <!-- ============== CSS SLICK ====================== -->
+    <!-- Coba nanti cek di slick.css apakah ada yg di rubah -->
+    <link rel="stylesheet" type="text/css" href="asset/css/slick.css" />
+
+    <!-- Coba nanti cek di slick-theme.css apakah ada yg di rubah -->
+    <link rel="stylesheet" type="text/css" href="asset/css/slick-theme.css" />
+
+    <title>Pondok Labu Kicks</title>
+  </head>
+  <body>
+    <!-- ============== SCROLL TOP ============== -->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class="bx bx-chevron-up-circle scrolltop__icon"></i>
+    </a>
+
+    <!-- ============== HEADER ================== -->
+    <header class="l-header" id="header">
+      <nav class="nav bd-container">
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+          <!-- logo box menu (ubah warna saja nanti dari boxicons.com) -->
+        </div>
+
+        <a href="index.html" class="nav__logo">PL Kicks™</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#products" class="nav__link">Products</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#size" class="nav__link">Size Chart</a>
+            </li>
+            <li class="nav__item">
+              <a href="index.html#contact" class="nav__link">Contact Us</a>
+            </li>
+
+            <li>
+              <i class="bx bx-toggle-left change-theme" id="theme-button"></i>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Keranjang Belanja -->
+        <div class="nav__shop">
+          <a href="#" class="nav__icon">
+            <!-- coba ubah dari boxicons.com -->
+            <i class="bx bxs-shopping-bag-alt"></i>
+            <span>2</span>
+          </a>
+
+          <div class="nav__shop-content">
+            <div class="title_shop">
+              <span>Keranjang Belanja</span>
+            </div>
+
+            <div class="item">
+              <div class="image_cart">
+                <div class="image_c">
+                  <img src="" alt="" />
+                  <!-- Kasih gambar di src nya-->
+                </div>
+              </div>
+              <div class="description">
+                <span>Adidas Ultraboost 1.0 Kansas Jayhawks</span>
+                <span>1 Pcs</span>
+              </div>
+              <div class="total-price">Rp. 3.300.000</div>
+              <a href="#" class="delete-item">
+                <i class="bx bxs-x-circle"></i>
+              </a>
+            </div>
+
+            <div class="total-all">
+              <span>Total Harga</span>
+              <span>Rp. 3.300.000</span>
+            </div>
+
+            <div class="btn-checkout">
+              <a href="shopping-cart.html" class="button-top2">Check Out</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--=============== PAGINATION =============-->
+      <section class="section bd-container" id="breadcrumb">
+        <div class="bd-grid breadcrumb">
+          <div class="breadcrumb">
+            <li>
+              <a href="index.html"> <i class="bx bxs-home"></i> Home</a>
+            </li>
+            <li>Detail</li>
+            <li>Shopping Cart</li>
+          </div>
+          <div class="breadcrumb-pagination"></div>
+        </div>
+      </section>
+
+      <!--========== CART ==========-->
+      <section class="cart bd-container" id="cart">
+        <div class="cart__container bd-grid">
+          <div class="shopping-cart">
+            <div class="cart-table">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Image</th>
+                    <th class="p-name text-center">Product name</th>
+                    <th>Size</th>
+                    <th>Price</th>
+                    <th>Cancel</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="cart-pic first-row">
+                      <img src="assets/img/sneakers1.png" />
+                    </td>
+                    <td class="cart-title first-row text-center">
+                      ADIDAS ULTRABOOST 1.0 KANSAS
+                    </td>
+                    <td class="p-size first-row">43 1/3</td>
+                    <td class="p-price first-row">Rp. 3.300.000</td>
+                    <td class="delete-item-sc first-row">
+                      <!-- Coba ubah dari box icon untuk ikon X nya -->
+                      <a href="#"><i class="bx bxs-x-circle"></i></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="col-lg-8">
+              <h3 class="mb-4">Informasi Pembeli:</h3>
+              <div class="user-checkout">
+                <form>
+                  <div class="form-group">
+                    <label for="namaLengkap">Nama Lengkap</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="namaLengkap"
+                      aria-describedby="namaHelp"
+                      placeholder="Masukan Nama Lengkap"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="namaLengkap">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailAddress"
+                      aria-describedby="emailHelp"
+                      placeholder="Masukan Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="namaLengkap">No. Handphone</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="noHP"
+                      aria-describedby="noHPHelp"
+                      placeholder="Masukan No. Handphone"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="alamatLengkap">Alamat</label>
+                    <textarea
+                      class="form-control"
+                      id="alamatLengkap"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="proceed-checkout">
+            <ul>
+              <li class="subtotal">No. Pesanan: <span>17081945N4B1L</span></li>
+              <li class="subtotal mt-3">
+                Subtotal Produk <span>Rp. 3.300.000</span>
+              </li>
+              <li class="subtotal mt-3">
+                Subtotal Pengiriman <span>Rp. 12.000</span>
+              </li>
+              <li class="subtotal mt-3">
+                Biaya Layanan <span>Rp. 1.500</span>
+              </li>
+              <li class="subtotal mt-3">
+                Total Pembayaran <span>Rp. 3.313.500</span>
+              </li>
+              <li class="subtotal mt-3">Bank Transfer <span>BCA</span></li>
+              <li class="subtotal mt-3">
+                No. Rekening <span>731 025 1919</span>
+              </li>
+              <li class="subtotal-btm mt-3">
+                Nama Penerima <span>Nabil Ihsan Syakir</span>
+              </li>
+            </ul>
+            <a href="success.html" class="proceed-btn">Selesaikan Pembayaran</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ============== -->
+    <footer class="footer section bd-container">
+      <div class="footer__container bd-grid">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">PL Kicks™</a>
+          <span class="footer__description">Store</span>
+          <div>
+            <!-- Coba ubah warna logo di boxicons -->
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-facebook"></i
+            ></a>
+            <!-- Coba ubah warna logo di boxicons -->
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-instagram"></i
+            ></a>
+            <!-- Coba ubah warna logo di boxicons -->
+            <a href="#" class="footer__social"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Service</h3>
+          <ul>
+            <li>
+              <a href="#" class="footer__link">Order Tracking</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Return and Warranty Policy</a>
+            </li>
+            <li>
+              <a href="#" class="footer__link">Customer Reviews and Ratings</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Information</h3>
+          <ul>
+            <li><a href="#" class="footer__link">Contact Us</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+            <li><a href="#" class="footer__link">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__content">
+          <h3 class="footer__title">Address</h3>
+          <ul>
+            <li>Jl. RS. Fatmawati Raya No. 99</li>
+            <li>Pd. Labu, Jakarta Selatan 170845 - Indonesia</li>
+            <li>Phone : 089992386888</li>
+            <li>Email : plkicks@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="footer__copy">
+        &#169; 2023 Nabil Ihsan Syakir. All right reserved
+      </p>
+    </footer>
+
+    <!-- ================= SCROLL REVEAL dari www.scrollrevealjs.org ============== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ================= MAIN JS ==================== -->
+    <script src="asset/js/main.js"></script>
+
+    <!-- ================= JS SLICK ==================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="asset/js/slick.js"></script>
+    <script src="asset/js/slick.min.js"></script>
+
+    <script>
+      $(".slick_two").slick({
+        dots: true,
+        arrows: true,
+        autoplay: true,
+        Infinite: true,
+        speed: 1500,
+        autoplaySpeed: 1900,
+        responsive: [
+          {
+            breakpoint: 5000,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+
+      $(".multiple-items").slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      });
+
+      /*---Single Product---*/
+      $(".product-thumbs-track .pt").on("click", function () {
+        $(".product-thumbs-track .pt").removeClass("active");
+        $(this).addClass("active");
+        var imgurl = $(this).data("imgbigurl");
+        var bigImg = $(".product-big-img").attr("src");
+        if (imgurl != bigImg) {
+          $(".product-big-img").attr({
+            src: imgurl,
+          });
+          $(".zoomImg").attr({
+            src: imgurl,
+          });
+        }
+      });
+
+      $(".product-pic-zoom").zoom();
+    </script>
+  </body>
+</html>
